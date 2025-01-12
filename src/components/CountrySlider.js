@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 
 const images = [
@@ -421,7 +422,9 @@ const FlagCarousel = () => {
             className="flex-shrink-0 w-30 md:w-40 p-3 flex flex-col items-center mx-2"
           >
             <div className="relative w-24 h-24">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src={item.flag}
                 alt={item.country}
                 className="object-contain w-full h-full"

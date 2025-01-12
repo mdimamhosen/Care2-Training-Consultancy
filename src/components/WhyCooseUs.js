@@ -2,14 +2,13 @@
 import { useState } from "react";
 import { BiMoney, BiSupport, BiBook, BiTime } from "react-icons/bi";
 
-// Data for Why Choose Us section
 const WhyChooseUsData = [
   {
     _id: "1",
     title: "Affordable and Transparent Pricing",
     description:
       "We offer cost-effective solutions without compromising on quality.",
-    color: "#231F41", // Custom color
+    color: "#231F41",
     icon: <BiMoney size="30" />,
   },
   {
@@ -63,7 +62,7 @@ const WhyChooseUsCard = ({ title, description, color, icon }) => {
       >
         {icon}
       </div>
-      <h1 className="mt-4 text-lg font-semibold text-center">{title}</h1>
+      <h2 className="mt-4 text-lg font-semibold text-center">{title}</h2>
       <p className="mt-2 text-sm text-center">{description}</p>
     </div>
   );
@@ -72,12 +71,40 @@ const WhyChooseUsCard = ({ title, description, color, icon }) => {
 const WhyChooseUs = () => {
   return (
     <div className="py-8 lg:py-10 flex flex-col items-center">
-      <h1 className=" text-3xl md:text-5xl font-bold text-center mb-3 ">
+      {/* Meta Tags for SEO */}
+      <head>
+        <meta
+          name="description"
+          content="Discover why Care2 Training Consultancy is your trusted partner for affordable, expert, and personalized solutions."
+        />
+        <meta
+          name="keywords"
+          content="consultancy, affordable pricing, expert guidance, tailored solutions, 24/7 support"
+        />
+        <meta name="author" content="Care2 Training Consultancy" />
+        <title>Why Choose Us | Care2 Training Consultancy</title>
+        <meta
+          property="og:title"
+          content="Why Choose Us | Care2 Training Consultancy"
+        />
+        <meta
+          property="og:description"
+          content="Discover why Care2 Training Consultancy is your trusted partner for affordable, expert, and personalized solutions."
+        />
+        <meta property="og:image" content="/path/to/image.jpg" />
+        <meta
+          property="og:url"
+          content="https://www.care2consultancy.com/why-choose-us"
+        />
+      </head>
+
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-3">
         Why Choose Us
       </h1>
-      <h4 className="text-center text-xs lg:text-base md:text-lg w-11/12 mx-auto mb-8">
+      <h2 className="text-center text-xs lg:text-base md:text-lg w-11/12 mx-auto mb-8">
         Your Trusted Partner for Tailored Solutions
-      </h4>
+      </h2>
+
       <div className="w-11/12 mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {WhyChooseUsData.map((card) => (

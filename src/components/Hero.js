@@ -1,18 +1,19 @@
 "use client";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Image from "next/image"; // Use Next.js Image for optimized images
 
 const Hero = () => {
   return (
     <main
-      className="hero-section px-4 py-8 md:py-16   "
+      className="hero-section px-4 py-8 md:py-16"
       id="home"
       aria-labelledby="hero-heading"
     >
       <div className="flex w-11/12 p-4 flex-col-reverse md:flex-row items-center justify-between mx-auto">
         {/* Hero Text */}
-        <div className="hero-text text-center w-full md:w-1/2   md:text-left">
-          <p className=" text-base md:text-2xl uppercase tracking-wide text-[var(--secondary-clr)] md:leading-[2.5rem]  ">
+        <div className="hero-text text-center w-full md:w-1/2 md:text-left">
+          <p className="text-base md:text-2xl uppercase tracking-wide text-[var(--secondary-clr)] md:leading-[2.5rem]">
             Welcome to
           </p>
           <h1
@@ -53,11 +54,14 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Hero Image */}
-        <div className=" w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
-          <img
-            src="https://i.postimg.cc/MKXdqyyf/hero-banner.png"
+        {/* Hero Image with Next.js Image Optimization and Lazy Loading */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
+          <Image
+            src="https://i.postimg.cc/MKXdqyyf/hero-banner.png" // Replace with WebP or optimized image URL
             alt="Care2-Consults Services Hero Banner"
+            width={600} // Set width for optimization
+            height={400} // Set height for optimization
+            loading="lazy" // Enable lazy loading for non-essential images
             className="w-full max-w-[200px] md:max-w-[600px] animate-[oscillation_3s_infinite]"
           />
         </div>
