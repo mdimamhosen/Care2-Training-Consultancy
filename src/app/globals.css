@@ -527,7 +527,6 @@ footer hr {
 
   .service-section h1,
   .about h1,
-  .blog h1,
   .contact-sec h1 {
     font-size: var(--fs-2);
     line-height: 3rem;
@@ -554,28 +553,6 @@ footer hr {
     font-size: 18px;
     padding: 8px 11px;
   }
-
-  .blog-text {
-    width: 96%;
-    padding: 2%;
-    left: 2%;
-  }
-  .blog-text p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-top: 10px;
-  }
-  .blog-text h3 {
-    font-size: var(--fs-7);
-    font-weight: var(--fw-700);
-    margin-bottom: 10px;
-  }
-
-  .blog-details span {
-    line-height: 1rem;
-    font-size: 0.8rem;
-    font-weight: var(--fw-500);
-  }
   .office .office-box span {
     font-size: 0.8rem;
     line-height: 1.5rem;
@@ -601,8 +578,8 @@ footer hr {
 
   .hamburger-menu {
     display: block;
-    height: 40px;
-    width: 50px;
+    height: 30px;
+    width: 40px;
     position: relative;
     cursor: pointer;
     padding: 1rem;
@@ -732,14 +709,9 @@ footer hr {
   }
 
   .service-section,
-  .about,
-  .blog {
+  .about {
     top: 20px;
     padding: 80px 5%;
-  }
-
-  .blog {
-    padding-bottom: 0;
   }
 
   .service-col {
@@ -778,36 +750,6 @@ footer hr {
   .about-img {
     width: 100%;
   }
-  .blog-container {
-    flex-direction: column;
-    width: 100%;
-  }
-  .blog-container:nth-child(1) {
-    margin-bottom: 200px;
-  }
-
-  .blog-box {
-    width: 100%;
-    position: relative;
-  }
-  .blog-box:nth-child(1) {
-    margin-bottom: 250px;
-  }
-
-  .blog-img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .blog-img img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .blog-text {
-    min-height: 180px;
-  }
-
   .contact-container {
     flex-direction: column-reverse;
   }
