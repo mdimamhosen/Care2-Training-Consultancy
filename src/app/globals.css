@@ -169,7 +169,7 @@ nav .hero-btn .fa-paper-plane {
 /* main hero page styling */
 main {
   position: relative;
-  top: 20px;
+  /* top: 20px; */
   display: flex;
   margin: 0 auto;
   align-items: center;

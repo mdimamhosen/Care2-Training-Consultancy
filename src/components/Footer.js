@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div>
+    <>
       {/* Meta Tags for SEO */}
       <head>
         <meta
@@ -21,7 +21,7 @@ const Footer = () => {
           content="footer, Care2 Training Consultancy, social media links, training consultancy"
         />
         <meta name="author" content="Care2 Training Consultancy" />
-        <title>Care2 Training Consultancy</title>
+        <title> Care2 Training Consultancy</title>
       </head>
 
       <footer className="mt-12">
@@ -99,7 +99,7 @@ const Footer = () => {
           </a>
         </button>
       </footer>
-    </div>
+    </>
   );
 };
 

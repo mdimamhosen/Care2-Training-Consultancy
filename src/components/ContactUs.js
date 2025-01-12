@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div>
+    <>
       {/* Meta Tags for SEO */}
       <head>
         <meta
@@ -115,7 +115,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
