@@ -112,4 +112,5 @@ The landing page has been deployed on **[Vercel](https://vercel.com/)** for live
 
 - The layout is fully responsive, adjusting to various screen sizes, from mobile devices to large desktop screens.
 - Flexbox and media queries have been used to ensure a smooth experience across different devices.
+
 ````
