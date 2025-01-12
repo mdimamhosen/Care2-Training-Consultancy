@@ -75,11 +75,10 @@ The landing page has been deployed on **[Vercel](https://vercel.com/)** for live
 ## How to Run the Project Locally
 
 1. Clone this repository to your local machine:
+
    ```bash
    git clone https://github.com/mdimamhosen/Care2-Training-Consultancy.git
    ```
-
-````
 
 2. Navigate to the project folder:
    ```bash
@@ -112,5 +111,3 @@ The landing page has been deployed on **[Vercel](https://vercel.com/)** for live
 
 - The layout is fully responsive, adjusting to various screen sizes, from mobile devices to large desktop screens.
 - Flexbox and media queries have been used to ensure a smooth experience across different devices.
-
-````
