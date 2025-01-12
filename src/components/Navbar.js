@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="hero-links nav-links">
+        <div className="hero-links nav-links hidden lg:flex text-base lg:text-lg">
           <a href="#home" aria-label="Go to homepage">
             Home
           </a>
@@ -23,8 +23,8 @@ const Navbar = () => {
           <a href="#about" aria-label="Learn more about us">
             About
           </a>
-          <a href="#blog" aria-label="Read our latest blog posts">
-            Blog
+          <a href="#services" aria-label="Read our latest blog posts">
+            Services
           </a>
           <a href="#contact" className="contact4Mobile" aria-label="Contact us">
             Contact
@@ -45,18 +45,6 @@ const Navbar = () => {
           <div className="ham-bar bar-bottom"></div>
         </div>
       </nav>
-
-      {/* Lazy Load Image Example */}
-      <div className="navbar-image">
-        <Image
-          src="/path-to-image.jpg" // Replace with your image path
-          alt="Care2 Consultancy Logo"
-          width={100}
-          height={100}
-          loading="lazy" // Enable lazy loading for the image
-          className="lazy-img"
-        />
-      </div>
     </header>
   );
 };
